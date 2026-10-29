@@ -287,9 +287,9 @@ h1, h2, h3 {
   padding: 7px;
   background: linear-gradient(145deg, #e9d5ff, #9333ea 45%, #312e81);
   box-shadow:
-  0 0 15px rgba(168, 85, 247, 0.65),
-  0 0 35px rgba(168, 85, 247, 0.55),
-  0 0 70px rgba(124, 58, 237, 0.4),
+  0 0 15px rgb(235, 229, 236),
+  0 0 35px rgba(112, 49, 170, 0.938),
+  0 0 70px rgba(168, 3, 245, 0.4),
   0 0 110px rgba(150, 74, 160, 0.985);
   position: relative;
   z-index: 1;
