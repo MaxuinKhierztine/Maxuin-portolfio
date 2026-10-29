@@ -1,5 +1,4 @@
 
-
 :root {
   --bg: #080914;
   --panel: #111326;
@@ -51,10 +50,12 @@ button:focus-visible, a:focus-visible {
   outline-offset: 5px;
 }
 
+
 .navbar {
   height: 86px;
   width: 100%;
-  padding: 0 7%;
+  padding: 0 16px 0 4%;
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,6 +64,7 @@ button:focus-visible, a:focus-visible {
   position: relative;
   z-index: 5;
 }
+
 
 .logo {
   font: 700 1.8rem 'Space Grotesk', sans-serif;
@@ -73,12 +75,20 @@ button:focus-visible, a:focus-visible {
   color: #c084fc;
 }
 
+
 .nav-links {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: clamp(12px, 2vw, 28px);
+  gap: clamp(12px, 1.5vw, 24px);
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  width: max-content;
 }
+
 
 .nav-links button, .about-link {
   border: 0;
@@ -792,15 +802,16 @@ h1, h2, h3 {
 }
 
 .social-contacts {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 18px;
-    margin-top: 20px;
-    width: max-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  gap: 12px;
+  margin: 0 0 0 auto;
+  width: max-content;
+  flex-shrink: 0;
 }
+
 
 .social-contacts a {
     flex: 0 0 30px;
@@ -946,3 +957,16 @@ footer.page-controls #next-button {
 .social-icons a i {
     transition: color 0.3s ease, transform 0.3s ease;
 }
+
+.navbar .social-contacts {
+  margin-left: 1200px !important;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.navbar .nav-links {
+  flex-shrink: 0;
+  gap: 20px;
+}
+
